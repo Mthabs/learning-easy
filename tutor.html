@@ -1,35 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="learning sphere, tutors, learning space, learning platform">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Learning Easy</title>
-</head>
-<body>
-    <header>
-        <div>
-            <h1 id="name">Learning Easy</h1>
-        </div>
-        <nav>
-            <ul id="nav-bar">
-                <li>
-                    <a href="learner.html">Learner</a>
-                </li>
-                <li>
-                    <a href="tutors.html" class="active">Tutors</a>
-                </li>
-                <li>
-                    <a href="index.html">About us</a>
-                </li>
-            </ul>
-        </nav>
-    </header> 
-    <section></section>  
-    <section></section> 
-    <section></section>
-    <footer></footer>
-</body>
-</html>
+<main>
+    <div class="container">
+        <!-- Content for tutor.html goes here -->
+
+        <section>
+            <!-- Information about being a tutor -->
+            <div id="tutor-benefts">
+                <h3>Why this platform is so important to you?<br>Here are the reasons:</h3>
+                <ul>
+                    <li>You will be earning extra income.</li>
+                    <li>You will be your own boss.</li>
+                    <li>Your communication skills will improve.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <!-- Teacher image section -->
+            <div id="teacher_image">
+                <img src="assets/images/pexels-julia-m-cameron-4145194.jpg" alt="Image description">
+            </div>
+        </section>
+
+        <section>
+            <!-- Table indicating tutor availability -->
+            <table id="session-prices">
+                <caption><h2>Please indicate the day and time you will be available for the session</h2></caption>
+                <tr>
+                    <th colspan="2">Monday</th>
+                    <th colspan="2">Tuesday</th>
+                    <th colspan="2">Wednesday</th>
+                    <th colspan="2">Thursday</th>
+                    <th colspan="2">Friday</th>
+                </tr>
+                <tr>
+                    <td><b>Yes/No</b></td>
+                    <td><b>Time</b></td>
+                    <td><b>Yes/No</b></td>
+                    <td><b>Time</b></td>
+                    <td><b>Yes/No</b></td>
+                    <td><b>Time</b></td>
+                    <td><b>Yes/No</b></td>
+                    <td><b>Time</b></td>
+                    <td><b>Yes/No</b></td>
+                    <td><b>Time</b></td>
+                </tr>
+                <tr>
+                    <!-- Add your availability data here -->
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <!-- Table for tutor sign-up -->
+            <div id="tutor-details">
+                <h2>Please complete the form below.</h2>
+                <form>
+                    <h2>Personal information:</h2><br>
+                    <label for="fname">1. First name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                    <label for="lname">2. Last name:</label>
+                    <input type="text" id="lname" name="lname" required><br><br>
+                    <label for="Qualifications">3. Enter your Qualifications:</label><br>
+                    <textarea name="Qualifications" id="Qualifications" rows="1" cols="60"></textarea>
+                    <label for="subjects">4. Select a subject</label>
+                    <select id="subjects" name="subjects">
+                        <option value="English">English</option>
+                        <option value="Programming">Programming</option>
+                        <option value="Maths">Maths</option>
+                    </select>
+                    <input type="submit" value="Submit"><br><br>
+                    <label for="phone">5. Put your phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+353-81585-6113" pattern="[0-9]{4}-[0-9]{5}-[0-9]">
+                    <label for="email">6. Put your email address</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" pattern="[example]{@gmail}-[com]"><br><br>
+                    <label for="message">7. You can text us below or use our contact details for more information.</label><br>
+                    <textarea name="message" id="message" rows="2" cols="68"></textarea>
+                </form>
+            </div>
+        </section>
+
+        <section id="course-section">
+            <h3 id="in-store">Benefits:</h3>
+            <div id="english-course">
+                <div class="subject">
+                    <h4>English</h4>
+                    <hr>
+                    <p>English is the language of science, aviation, computers, diplomacy, and tourism. Knowing English increases your chances of getting a good job in a multinational company within your home country or of finding work abroad.</p>
+                </div>
+            </div>
+            <div id="math-course">
+                <div class="subject">
+                    <h4>Maths</h4>
+                    <hr>
+                    <p>A strong understanding of math concepts means more than just number sense. It helps us see the pathways to a solution. And in many cases, there is more than one way to get to the right answer. Logical reasoning and analytical thinking improve alongside math skills.</p>
+                </div>
+            </div>
+            <div id="programming-course">
+                <div class="subject">
+                    <h4>Programming</h4>
+                    <hr>
+                    <p>Job prospects for coders extend far beyond technology companies. While cybersecurity and financial technology are growing fields, employees with strong coding skills are needed in healthcare, education, and the public sector as well.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>

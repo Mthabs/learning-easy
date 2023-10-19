@@ -1,12 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans:wght@200;300&family=Source+Sans+Pro:wght@300&display=swap');
 
-*{
+/* Reset margin and padding for all elements */
+* {
     margin: 0;
     padding: 0;
-    border: none;
-    color: purple;
+    box-sizing: border-box;
 }
-body{
-    font-family:Montserrat, sans-serif;
-    background-color: lightgrey;
+
+/* Set a background color and text color */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Create a container to center content and add some padding */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the header section */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Style the main content section */
+main {
+    padding: 20px 0;
+}
+
+/* Style the footer section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer .social-media {
+    list-style: none;
+}
+
+footer .social-media li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Add responsiveness for smaller screens */
+@media screen and (max-width: 768px) {
+    header .logo {
+        font-size: 20px;
+    }
+
+    header nav ul li {
+        margin-right: 10px;
+    }
+
+    footer .social-media li {
+        margin-right: 5px;
+    }
+
+    /* Adjust other responsive styles as needed */
 }
